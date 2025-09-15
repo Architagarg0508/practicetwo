@@ -1,0 +1,79 @@
+.orangeSection {
+  background-color: #f6894c;
+  min-height: 100vh;
+  padding: 80px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #fff176;
+}
+
+.mainText h1 {
+  font-family: "Salo Test Giorgio", sans-serif;
+  font-size: 180px;   
+  font-weight: 500;   
+  line-height: 144px;
+  margin-bottom: 16px;
+}
+
+.mainText p {
+  font-family: "RobotoSerif", sans-serif;
+  font-size: 40px;
+  font-weight: 300;   
+  line-height: 50px;
+  color: #ffdc82;
+  margin-bottom: 60px;
+}
+
+.cards {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #fdfcf6;
+  padding: 30px;
+  width: 680px;
+  height: 323.73px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.card h2 {
+  font-family: "Salo Test Giorgio", sans-serif;
+  font-size: 95px;
+  line-height: 80px;
+  font-weight: 500;   
+  margin-bottom: 16px;
+  color: #2b1547;
+}
+
+.card p {
+  font-family: "Helvetica Neue LT Pro", sans-serif;
+  font-weight: 400;  
+  line-height: 28px;
+  font-size: 19px;
+  color: #333;
+  margin-bottom: 24px;
+}
+
+.btn {
+  background: transparent;
+  border: 2px solid #ffdc82;
+  padding: 8px 14px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #2b1547;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn span {
+  color: #2b1547;
+  font-weight: bold;
+}
