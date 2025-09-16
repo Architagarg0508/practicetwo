@@ -30,7 +30,7 @@
   width: 2385px;
   z-index: 0;
   pointer-events: none;
-  pointer-events: none;
+  
 }
 
 .mainText h1 {
@@ -163,7 +163,64 @@
 }
 
 @media (max-width: 768px) {
+  .mainText h1 {
+    font-size: 83px;
+    line-height: 67px;
+    margin-top: 80px;
+  }
+
+  .mainText p {
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 27px;
+  }
+
+  .cards {
+    flex-direction: column;
+    gap: 27px;
+    padding: 0 16px;
+  }
+
   .card {
-    flex: 1 1 100%;
+    width: 100%;
+    height: auto;
+    padding: 32px 24px;
+  }
+
+  .card h2 {
+    font-size: 50px;
+    line-height: 50px;
+  }
+
+  .card p {
+    font-size: 16px;
+    line-height: 23px;
+    
+  }
+
+  .btn {
+    width: fit-content;
+    font-size: 16px;
+    padding-left: 16px;
+  }
+
+  .Box {
+    width: auto;
+    height: 48px;
+  }
+
+  .curve1 {
+    width: 954px;
+    height: auto;
+    top: 0;
+    left: 0;
+  }
+
+  .curve2 {
+    width: 954px;
+    height: auto;
+    bottom: 0;
+    right: 0;
   }
 }
+
