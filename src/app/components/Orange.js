@@ -1,19 +1,28 @@
 import styles from "./Orange.module.css";
-
+import Image from "next/image";
 export default function Orange() {
   return (
     <section className={styles.orangeSection}>
-        <img src="/Vector48.svg" className={styles.curve1} alt="curve" />
+        <picture className={styles.topline}>
+            <Image 
+              src="/Vector48.svg" 
+              alt="curve"
+              height={0}
+              width={0}
+              className={styles.curve1}
+           />
+        </picture>
+      {/* <img src="/Vector48.svg" className={styles.curve1} alt="curve" /> */}
+
       
-      <div className={styles.mainText}>
-        <h1>
-          HAPPINESS IS <br /> <span>NOT A GOAL.</span>
+        <h1 className={styles.mainTextHeading}>
+          HAPPINESS is <br /> <span>NOT A GOAL.</span>
         </h1>
-        <p>
+        <p className={styles.mainTextPara}>
           It is an outcome. <br />
           An outcome of a life with meaning.
         </p>
-      </div>
+      
       <div className={styles.cards}>
         <div className={styles.card}>
           <h2>THE INITIATIVE</h2>
@@ -65,8 +74,18 @@ export default function Orange() {
             </div>
           </a>
         </div>
+        
       </div>
-       <img src="/Vector47.svg" className={styles.curve2} alt="curve" />
+      <picture className={styles.bottomline}>
+            <Image 
+              src="/Vector47.svg" 
+              alt="curve"
+              height={0}
+              width={0}
+              className={styles.curve2}
+           />
+        </picture>
+     
     </section>
   );
 }
