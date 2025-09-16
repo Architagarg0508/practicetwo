@@ -7,20 +7,45 @@
   align-items: center;
   text-align: center;
   color: #fff176;
+  position: relative;
+  overflow: hidden;
+}
+.curve1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2000px;
+  height: auto;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.curve2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  max-width: 100%;
+  height: auto;
+  width: 2385px;
+  z-index: 0;
+  pointer-events: none;
+  pointer-events: none;
 }
 
 .mainText h1 {
   font-family: "Salo Test Giorgio", sans-serif;
-  font-size: 180px;   
-  font-weight: 500;   
+  font-size: 180px;
+  font-weight: 500;
   line-height: 144px;
-  margin-bottom: 16px;
+  margin-top: 153.17px;
+  margin-bottom: 8.83px;
 }
 
 .mainText p {
   font-family: "RobotoSerif", sans-serif;
   font-size: 40px;
-  font-weight: 300;   
+  font-weight: 200;
   line-height: 50px;
   color: #ffdc82;
   margin-bottom: 60px;
@@ -28,33 +53,38 @@
 
 .cards {
   display: flex;
-  gap: 40px;
+  gap: 120px;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  z-index: 1;
 }
 
 .card {
   background: #fdfcf6;
-  padding: 30px;
+  padding: 48.07px 71.85px 52.5px 55.56px;
+  /* flex: 1 1 45%; */
   width: 680px;
   height: 323.73px;
-  border-radius: 8px;
+
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   text-align: left;
+  flex-shrink: 0;
 }
 
 .card h2 {
   font-family: "Salo Test Giorgio", sans-serif;
   font-size: 95px;
   line-height: 80px;
-  font-weight: 500;   
-  margin-bottom: 16px;
+  font-weight: 500;
+  margin-top: 48.07px;
+  margin-bottom: 13.2px;
   color: #2b1547;
 }
 
 .card p {
   font-family: "Helvetica Neue LT Pro", sans-serif;
-  font-weight: 400;  
+  font-weight: 400;
   line-height: 28px;
   font-size: 19px;
   color: #333;
@@ -62,18 +92,78 @@
 }
 
 .btn {
-  background: transparent;
-  border: 2px solid #ffdc82;
-  padding: 8px 14px;
+  /* background: transparent; */
+  /* border: 2px solid #ffdc82; */
+  /* padding: 8px 14px; */
+  /* width: 194.66px; */
+  /* height: 54px; */
+
+  line-height: 28px;
   cursor: pointer;
-  font-size: 16px;
-  color: #2b1547;
+  font-size: 19px;
+  /* line-height: 28px; */
+  justify-content: space-between;
+  /* color: #2b1547; */
   display: flex;
   align-items: center;
-  gap: 8px;
+  /* gap: 8px; */
+  background-color: #fff2ae;
+  border: 2px solid #000000;
+  font-family: "Helvetica Neue LT Pro", sans-serif;
+  font-weight: 400;
+  padding: 0;
+  padding-left: 20px;
+  width: fit-content;
 }
 
-.btn span {
-  color: #2b1547;
-  font-weight: bold;
+.arrowCircle {
+  width: 30.92px;
+  height: 30.92px;
+  background-color: #f8bed6;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* flex-shrink: 0; */
+  overflow: hidden;
+  position: relative;
+}
+
+.Box {
+  background-color: #2b1c36;
+  width: 55.09px;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.arrow {
+  position: absolute;
+  transform: translateX(0%);
+  transition: transform 0.3s ease-in-out;
+}
+.arrow2 {
+  position: absolute;
+  transform: translateX(-200%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.btn:hover .arrow {
+  transform: translateX(200%);
+}
+
+.btn:hover .arrow2 {
+  transform: translateX(0%);
+}
+
+.btnText {
+  padding: 0 16px;
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .card {
+    flex: 1 1 100%;
+  }
 }
