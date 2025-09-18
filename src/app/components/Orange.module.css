@@ -1,7 +1,7 @@
 .orangeSection {
   background-color: #f6894c;
   min-height: 100vh;
-  padding: 80px 40px;
+  padding: 60px 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -10,7 +10,7 @@
   position: relative;
   overflow: hidden;
 }
-.topline {
+.topline{
   width: 100%;
   height: 487.61px;
   overflow: hidden;
@@ -18,37 +18,26 @@
   top: 0;
 }
 .curve1 {
-  /* position: absolute;
-  top: 0;
-  left: 0; */
-  /* width: 2000px; */
   width: 100%;
   height: 100%;
   object-fit: cover;
   z-index: 0;
-  /* pointer-events: none; */
-}
-
-.bottomline {
-  width: 100%;
-  height: 607.64px;
-  overflow: hidden;
-  position: absolute;
-  bottom: 0;
   
 }
 
-.curve2 {
-  /* position: absolute;
+.bottomline{
+  width: 100%;
+  height: 500.64px;
+  overflow: hidden;
+  position: absolute;
   bottom: 0;
-  right: 0; */
+}
 
+.curve2 {
   width: 100%;
   height: 100%;
   object-fit: cover;
   z-index: 0;
-  /* pointer-events: none;
-   */
 }
 
 .mainTextHeading {
@@ -68,6 +57,7 @@
   line-height: 50px;
   color: #ffdc82;
   margin-bottom: 60px;
+  
 }
 
 .cards {
@@ -76,11 +66,13 @@
   justify-content: center;
   flex-wrap: wrap;
   /* overflow-x: auto; */
-  padding: 0 20px;
+  /* padding: 0 20px; */
   z-index: 1;
   box-sizing: border-box;
   width: 100%;
   max-width: 100vw;
+  padding: 0;
+  
 }
 
 .card {
@@ -88,7 +80,7 @@
   padding: 48.07px 71.85px 52.5px 55.56px;
   flex: 1 1 calc(50% - 60px);
   box-sizing: border-box;
-  width: 100%;
+   width: 100%;
   max-width: calc(50% - 60px);
   min-width: 300px;
   height: auto;
@@ -106,6 +98,7 @@
   margin-top: 48.07px;
   margin-bottom: 13.2px;
   color: #2b1547;
+  text-transform: uppercase;
 }
 
 .card p {
@@ -118,26 +111,18 @@
 }
 
 .btn {
-  /* background: transparent; */
-  /* border: 2px solid #ffdc82; */
-  /* padding: 8px 14px; */
-  /* width: 194.66px; */
-  /* height: 54px; */
-
   line-height: 28px;
   cursor: pointer;
   font-size: 19px;
-  /* line-height: 28px; */
-  justify-content: space-between;
-  /* color: #2b1547; */
+  /* justify-content: space-between; */
   display: flex;
   align-items: center;
-  /* gap: 8px; */
   background-color: #fff2ae;
   border: 2px solid #000000;
   font-family: "Helvetica Neue LT Pro", sans-serif;
   font-weight: 400;
-  padding: 0;
+  /* padding: 0; */
+  padding-right: 0;
   padding-left: 20px;
   width: fit-content;
   text-decoration: none;
@@ -158,11 +143,12 @@
 
 .Box {
   background-color: #2b1c36;
-  width: 55.09px;
+  width: 54px;
   height: 54px;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
 }
 .arrow {
   position: absolute;
@@ -190,6 +176,9 @@
 }
 
 @media (max-width: 768px) {
+  .orangeSection {
+    padding: 40px 16px; 
+  }
   .mainTextHeading {
     font-size: 83px;
     line-height: 67px;
@@ -224,6 +213,7 @@
   .card p {
     font-size: 16px;
     line-height: 23px;
+    
   }
 
   .btn {
@@ -233,31 +223,27 @@
   }
 
   .Box {
-    width: auto;
+    width: 48px;
     height: 48px;
   }
 
-  .topline {
-    width: 100%;
-    height: 274px;
-    position: absolute;
-    top: 0;
+   .arrowCircle {
+    width: 28px;
+    height: 28px;
   }
 
-  .curve1 {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  .topline{
+    
+    height: 274px;
+   
   }
-  .bottomline {
-    width: 100%;
-    height: 240px;
-    position: absolute;
-    bottom: 0;
-  }
-  .curve2 {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
+
+.bottomline{
+  /* width: 100%; */
+  height: 240px;
+  /* position: absolute;
+  bottom: 0; */
 }
+  
+}
+
